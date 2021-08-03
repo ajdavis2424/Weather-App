@@ -65,4 +65,33 @@ input.search-bar{
 
 h1.temp{
     margin: 0;
+    margin-bottom: .5em;
+}
+
+.description{
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.icon{ 
+
+}
+
+/* hides dumy text of search*/
+.weather .loading{
+   visibility:  hidden;
+   max-height: 20px;
+   position: relative;
+}
+
+.weather .loading:after{
+    visibility: visible;
+    content: "laoding...";
+    color: white;
+    position: absolute;
 }

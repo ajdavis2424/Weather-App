@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style.css">
-  <script src="./assets/main.js"></script>
+  <script src="./assets/main.js" defer></script>
   <title>Weather App</title>
 </head>
 <body>
@@ -17,15 +17,17 @@
     <div class="search">
       <!-- placeholder embeds text in search bar! -->
       <input type="text" class="search-bar" placeholder="search">
-      <button>search icon</button>
+      <button>Submit</button>
     </div>
-    <div class="weather">
-      <h2 class="city">weather in tampa</h2>
-      <div class="temp">99 F</div>
-      <img src="" alt="" class="weather icon">
-      <div class="description">CLoudy</div>
+    <div class="weather loading">
+      <h2 class="city">Weather in Tampa</h2>
+      <div class="temp">99° F</div>
+      <div class="flex">
+      <img src="http://openweathermap.org/img/wn/04d@2x.png" alt="" class="icon" />
+      <div class="description">Cloudy</div>
+    </div>
       <div class="humidity">humidity 60%</div>
-      <div class="wind">Wind SPeed willd fast</div>
+      <div class="wind">Wind Speed: wild fast</div>
     </div>
   </div>
 </body>
