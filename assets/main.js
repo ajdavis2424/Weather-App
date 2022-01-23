@@ -28,9 +28,9 @@ let weather = {
         document.querySelector(".icon").src = 
         "http://openweathermap.org/img/wn/" + icon + "@2x.png";
         document.querySelector(".description").innerText = description;
-        document.querySelector(".temp").innerText = temp;
+        document.querySelector(".temp").innerText = temp + "°C";
         document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
-        document.querySelector(".wind").innerText = "Wind Speed: " + speed + "mph";
+        document.querySelector(".wind").innerText = "Wind Speed: " + speed + " mph";
     //    will remove dummy text on reload
         document.querySelector(".weather").classList.remove("loading");
         // below allows each search to pull a pic from the city chosen!
@@ -55,4 +55,4 @@ document.querySelector(".search-bar").addEventListener("keyup", function(event){
 
 
 // below allows txet to be hidden until info is input
-weather.fetchWeather("denver")
+weather.fetchWeather("Tampa")
